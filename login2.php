@@ -17,7 +17,7 @@ session_start();
     
     if (empty($user) || empty($pass)) {
         $_SESSION['err']="Login: Username or password is empty";
-        header("Location: error2.php");
+        header("Location: formular2.php");
         exit();
     }
 
