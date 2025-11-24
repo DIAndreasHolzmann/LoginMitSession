@@ -77,6 +77,7 @@ session_start();
         // Redirect to success page
         header("Location: success2.php");
     } else {
+        // ERROR:
         // Login failed, set error message in session
         $_SESSION['err']="Login failed";
         // Redirect back to the login form
