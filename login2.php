@@ -47,7 +47,7 @@ session_start();
     // SQL to create table "users"
     // create table users ( username varchar(100) not null primary key, passwort varchar(100) not null);
 
-    $sql="SELECT username, password FROM users WHERE username = ? AND password = ?";
+    $sql="SELECT username, password FROM users WHERE username = ? AND passwort = ?";
     // Prepare and bind the statement with parameters
     $stmt = $conn->prepare($sql);
     // Es werden die Parameter (?) an die vorbereitete Anweisung gebunden

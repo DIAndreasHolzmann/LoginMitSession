@@ -36,7 +36,7 @@ session_start();
         <input type="password" id="passwordID" name="password"><br><br>
         <input type="reset" value="Reset">
         <input type="submit" value="Login" name="login">
-    <!-- Links zu den anderen Formularen
+    <!-- Links zu den anderen Formular Aktionen
         <input type="submit" formaction="forgotPassword2.php" value="Forgot Password" name="forgotPassword">
         <input type="submit" formaction="register2.php" value="Register" name="register">
      -->
