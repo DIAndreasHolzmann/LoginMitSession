@@ -34,6 +34,8 @@ session_start();
         exit(); 
     }
 
+   // create table users ( username varchar(100) not null primary key, passwort varchar(100) not null);
+
     $sql="SELECT username, password FROM users WHERE username = ? AND password = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $user, $pass);
