@@ -30,10 +30,10 @@ session_start();
      ?>
      
      <form action="login2.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
+        <label for="usernameID">Username:</label>
+        <input type="text" id="usernameID" name="username" required><br><br>
+        <label for="passwordID">Password:</label>
+        <input type="password" id="passwordID" name="password"><br><br>
         <input type="reset" value="Reset">
         <input type="submit" value="Login" name="login">
     <!-- Links zu den anderen Formularen
