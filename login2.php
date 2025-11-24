@@ -47,7 +47,7 @@ session_start();
     // SQL to create table "users"
     // create table users ( username varchar(100) not null primary key, passwort varchar(100) not null);
 
-    $sql="SELECT username, password FROM users WHERE username = ? AND passwort = ?";
+    $sql="SELECT username, passwort FROM users WHERE username = ? AND passwort = ?";
     // Prepare and bind the statement with parameters
     $stmt = $conn->prepare($sql);
     // Es werden die Parameter (?) an die vorbereitete Anweisung gebunden
@@ -73,7 +73,7 @@ session_start();
     // Check if any rows were returned
     if ($result->num_rows > 0) {
         // Save the username in the session
-        $_SESSION['username']=$username;
+        $_SESSION['username']=$user;
         // Redirect to success page
         header("Location: success2.php");
     } else {
